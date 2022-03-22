@@ -1,4 +1,5 @@
 import reactRefresh from '@vitejs/plugin-react-refresh'
+import { build } from 'vite'
 
 /**
  * https://vitejs.dev/config/
@@ -11,5 +12,8 @@ export default {
     hmr: {
       port: 443,
     }
+  },
+  build: {
+    outDir : "build",
   }
 }
